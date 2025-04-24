@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Erro - Conversor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            background-color: #f9f9f9;
+        }
+        .erro-box {
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 20px;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .erro-header {
+            color: #000000;
+            margin: 15px 0 10px 0;
+            font-size: 1.2em;
+        }
+        .erro-message {
+            margin: 8px 0;
+            line-height: 1.5;
+            text-align: left; /* Garante alinhamento à esquerda */
+        }
+        .voltar-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #2196F3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="erro-box">
+        <h1>Conversor de Distância</h1>
+        
+        <div> <!-- Container do erro (agora alinhado à esquerda) -->
+            <div class="erro-header">Erro</div>
+            <div class="erro-message">(a) A entrada deve ter apenas valores inteiros ou</div>
+            <div class="erro-message">(b) A opção de conversão é inválida</div>
+        </div>
+        
+        <a href="index.html" class="voltar-link">Retorne à página principal</a>
+    </div>
+</body>
+</html>
