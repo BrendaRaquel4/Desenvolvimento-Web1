@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Distância</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .form-box {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .btn-converter {
+            background-color: #4da6ff;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 30%;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h1>Conversor de Distância</h1>
+        <form action="converter" method="post" novalidate>
+            <div class="form-group">
+                <label for="opcao">Tipo de conversão:</label>
+                <select id="opcao" name="opcao" required>
+                    <option value="">-- Selecione --</option>
+                    <option value="miParaM">Milhas → Metros</option>
+                    <option value="mParaMi">Metros → Milhas</option>
+                    <option value="ftParaM">Pés → Metros</option>
+                    <option value="mParaFt">Metros → Pés</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" name="valor" required>
+            </div>
+            
+            <button type="submit" class="btn-converter">Converter</button>
+        </form>
+    </div>
+</body>
+</html>
